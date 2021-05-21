@@ -1,0 +1,16 @@
+<section ng-cloak>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-2" ng-repeat="(index, value) in listProductCategoryData">
+                <img ng-src="{{path_src}}/{{value.img}}" class="card-img-top" alt="{{value.img}}">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">{{value.name}}</h5>
+                        <p class="card-text">{{value.price}}</p>
+                        <button type="button" class="btn btn-primary" ng-click="modalBuyNow()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

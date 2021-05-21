@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <title>DocHereOnline Clinic Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  css  -->
+    <link rel="stylesheet" href="libs/bootstrap-5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="stylesheet" href="asset/css/banner.css">
+    <!--  script  -->
+    <script src="libs/bootstrap-5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/jquery/popper.min.js"></script>
+    <script src="libs/jquery/bootstrap.min.js"></script>
+    <script src="libs/jquery/slick.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+
+</head>
+
+<body>
+<!--Header-->
+<div header-app></div>
+<!--End header-->
+
+<!--Content-->
+<section id="app" ng-controller="HomeCtrl">
+    <div ng-view></div>
+</section>
+<!--End content-->
+
+<!--Footer-->
+<div footer-app></div>
+<!--End footer-->
+
+
+<!-- config -->
+<script src="scripts/app.js"></script>
+<script src="scripts/api.config.js"></script>
+<script src="scripts/route.js"></script>
+
+<!-- modules -->
+<script src="controllers/module/product-category.js"></script>
+
+<!-- components -->
+<script src="controllers/components/product-category.js"></script>
+
+<!--controller pages-->
+<script src="controllers/HomeCtrl.js"></script>
+<script src="controllers/ProductCtrl.js"></script>
+<script src="controllers/BlogCtrl.js"></script>
+<script src="controllers/SupportCtrl.js"></script>
+
+<!-- controller layouts -->
+<script src="controllers/layouts/HeaderCtrl.js"></script>
+<script src="controllers/layouts/FooterCtrl.js"></script>
+<script src="controllers/layouts/BannerCtrl.js"></script>
+</body>
+</html>
